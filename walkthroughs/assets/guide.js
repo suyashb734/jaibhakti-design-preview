@@ -34,8 +34,8 @@
     if (epoch !== currentEpoch) return;
     try {
       if (typeof frame.contentWindow.__dcSetProps === "function") {
-        frame.contentWindow.__dcSetProps("Jai Bhakti App", {
-          start: screen.title,
+        frame.contentWindow.__dcSetProps(frame.contentWindow.__dcRootName(), {
+          start: screen.route || screen.title,
           still: true,
         });
         capture.hidden = true;
@@ -84,24 +84,25 @@
     get("open-capture").href = rootPath(screen.image);
     frame.title = selected.label + " — " + tour.status;
     frame.onload = null;
-    if (screen.platform === "reference") {
+    if (screen.platform === "reference" || screen.renderer === "original") {
+      const selectedOriginal = screen.preview ? rootPath(screen.preview.split("#")[0]) : originalPath;
       capture.src = rootPath(screen.image);
       capture.alt = selected.label + " — frozen original reference capture";
       capture.hidden = false;
       frame.hidden = true;
-      get("open-source").href = originalPath;
+      get("open-source").href = screen.preview ? rootPath(screen.preview) : originalPath;
       get("render-status").textContent =
         "Loading the original interactive screen; its frozen capture is shown meanwhile.";
       frame.onload = () => activateOriginal(screen, currentEpoch);
-      if (frame.getAttribute("src") === originalPath)
+      if (frame.getAttribute("src") === selectedOriginal)
         activateOriginal(screen, currentEpoch);
-      else frame.src = originalPath;
+      else frame.src = selectedOriginal;
     } else {
       capture.hidden = true;
       frame.hidden = false;
       get("open-source").href = rootPath(screen.preview);
       frame.src = rootPath(
-        "previews/mobile/Prototype.html?capture=1#" + screen.route,
+        screen.preview.replace("#", "?capture=1#"),
       );
       get("render-status").textContent =
         "Interactive working draft. The frozen reference capture may differ after source edits. Record approval against an exact revision.";
