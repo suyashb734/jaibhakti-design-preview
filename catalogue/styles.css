@@ -1,0 +1,146 @@
+.catalogue-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+.seva-card {
+  border: 1px solid #e6d4b8;
+  border-radius: 24px;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.seva-hero {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1900/1069;
+  object-fit: cover;
+}
+.seva-content {
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.seva-content h2 {
+  font-size: 23px;
+  margin: 8px 0 10px;
+}
+.seva-content h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.seva-content p {
+  font-size: 13px;
+}
+.temple-name {
+  color: var(--jb-muted);
+  min-height: 44px;
+}
+.price-reference {
+  border-radius: 16px;
+  background: var(--jb-cream);
+  padding: 16px;
+  margin: 12px 0;
+}
+.price-reference strong {
+  font-size: 30px;
+  color: var(--jb-brown);
+  font-weight: 700;
+}
+.price-reference p {
+  margin: 0;
+}
+.temple-reference {
+  margin: 16px 0;
+}
+.temple-reference img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.temple-reference figcaption {
+  font-size: 11px;
+  color: var(--jb-muted);
+}
+.live-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: var(--jb-cta);
+  color: var(--jb-cta-ink);
+  border-radius: 999px;
+  padding: 12px;
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 600;
+}
+.source-details {
+  font-size: 12px;
+  margin: 18px 0;
+  overflow-wrap: anywhere;
+}
+.source-details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.source-details dl {
+  margin: 12px 0;
+}
+.source-details dt {
+  font-weight: 600;
+}
+.source-details dd {
+  margin: 0 0 10px;
+}
+.context-panel {
+  padding: 24px;
+  border: 1px solid #e6d4b8;
+  background: #fff;
+  border-radius: 20px;
+  margin: 28px 0;
+}
+.context-panel h2 {
+  margin-top: 0;
+}
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.flow-grid h3 {
+  font-size: 15px;
+}
+.flow-grid p {
+  font-size: 13px;
+}
+.notice {
+  padding: 20px;
+  border: 1px solid #e6c68c;
+  background: var(--jb-cream);
+  border-radius: 14px;
+  font-size: 13px;
+}
+@media (max-width: 950px) {
+  .catalogue-cards {
+    grid-template-columns: 1fr;
+  }
+  .flow-grid {
+    grid-template-columns: 1fr;
+  }
+  .temple-name {
+    min-height: 0;
+  }
+  .seva-content {
+    padding: 22px;
+  }
+  .seva-hero {
+    max-height: 420px;
+  }
+  .temple-reference img {
+    max-height: 260px;
+  }
+}

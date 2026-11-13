@@ -1,8 +1,8 @@
 {
   "source_repository": "https://github.com/suyashb734/jaibhakti-design",
-  "source_commit": "dfccf302d16b6e9ec51c3b98f5b81d4dd96155bd",
+  "source_commit": "eddb9484d490333c6837b747b4edb568932a1e54",
   "working_tree_dirty": false,
-  "built_at_utc": "2026-11-13T10:13:42.192351+00:00",
+  "built_at_utc": "2026-11-13T12:18:34.730039+00:00",
   "status": "design_review_snapshot_not_new_handoff_approval",
   "search_indexing": "noindex requested; public hosting is not access control",
   "files": [
@@ -11,12 +11,100 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "assets/brand/martel-900-0.woff2",
+      "sha256": "7f76ee44f2b0243f29556074804e2960f6a746aa0de4715a386aa1f9383ba0f3"
+    },
+    {
+      "path": "assets/brand/martel-900-1.woff2",
+      "sha256": "bbd3ea63b4f7b149cdd7c4e8db8294830fd65de7cbb1db60abab7405735feed8"
+    },
+    {
+      "path": "assets/brand/martel-900-2.woff2",
+      "sha256": "47d37398fca866559c8f2412a106cb4c01a1e4678c4a7d794e2d18419629f30c"
+    },
+    {
+      "path": "assets/brand/noto-sans-devanagari-400-0.woff2",
+      "sha256": "12223f2beeb4752c6fe7662550978ee22be4d56e49a8f937c324b015ac5ef77a"
+    },
+    {
+      "path": "assets/brand/noto-sans-devanagari-400-1.woff2",
+      "sha256": "d81a013359dce135281a51a45918b6527e39ff27c085b5d5260df9ad0b4a4a8c"
+    },
+    {
+      "path": "assets/brand/noto-sans-devanagari-400-2.woff2",
+      "sha256": "908ea550433276ce2ff423f086abac22a78caf4d033c11ba8ba2f0ca981ef676"
+    },
+    {
+      "path": "assets/brand/original-brand.css",
+      "sha256": "8cacdaf78ebcaab212faa8e15889d54315b73dc1a987876879e91cd3ed02b4fc"
+    },
+    {
+      "path": "assets/brand/poppins-400-0.woff2",
+      "sha256": "23617a1bf667dd6a29e2724ac6595e75924549d1c25e8672e2346ef38bc9984a"
+    },
+    {
+      "path": "assets/brand/poppins-400-1.woff2",
+      "sha256": "1fae5e73d2788ee1dea1d76eca3a9f157a0386de6be8c280d076a53a64c358a1"
+    },
+    {
+      "path": "assets/brand/poppins-400-2.woff2",
+      "sha256": "3dc5d0c52428fe1696264907a1054ebbaac07f8cbe45832c105f819c2ae397c0"
+    },
+    {
+      "path": "assets/brand/poppins-500-0.woff2",
+      "sha256": "9c8c47ee0aeaa2d378f4e5d5719ecbf05a601a35c285d0d48b888106bb15cf49"
+    },
+    {
+      "path": "assets/brand/poppins-500-1.woff2",
+      "sha256": "f8f0c28661c88edbcee022a4a80657619e8931af8c2a47c28e230307e2af30e5"
+    },
+    {
+      "path": "assets/brand/poppins-500-2.woff2",
+      "sha256": "289e0afc8be731a86822349e54557296f145926496bd2138db1bac0db77f77a2"
+    },
+    {
+      "path": "assets/brand/poppins-600-0.woff2",
+      "sha256": "6d8ef422be4d827037f6f2d5766a0808018876fa5e9aa9a92787fad9d1f17938"
+    },
+    {
+      "path": "assets/brand/poppins-600-1.woff2",
+      "sha256": "72efc6a32cfd37c557108628cffa01153c480c3d4cde556744406e50b9d8e9f7"
+    },
+    {
+      "path": "assets/brand/poppins-600-2.woff2",
+      "sha256": "872e862918591a9e824dc03ed92f05729435ffbb8ebbb10eff7eda26592b1798"
+    },
+    {
+      "path": "assets/brand/poppins-700-0.woff2",
+      "sha256": "6eb8802d7319fcd48850eb38e41ed6ea12d917faafdfac7dae5614a517dc2b54"
+    },
+    {
+      "path": "assets/brand/poppins-700-1.woff2",
+      "sha256": "2477683a4b1200680780a759cc1b93b816410362dc5f4c74ebfeafa212bcb74d"
+    },
+    {
+      "path": "assets/brand/poppins-700-2.woff2",
+      "sha256": "197a3cbd7290c242c5c765268cdd69a9a39867fdc80cd13071f243a81c56fb76"
+    },
+    {
+      "path": "assets/brand/temple-mark.svg",
+      "sha256": "f77ad50456b182cfee6670347c5bbd4f046e828c8ec3db651ea54e75fa8ec087"
+    },
+    {
+      "path": "catalogue/index.html",
+      "sha256": "2b2aba908fbe702370136a803a59073f6e8a3a32b6102f5ec284ac496a87eb85"
+    },
+    {
+      "path": "catalogue/styles.css",
+      "sha256": "99e859f3ef782e7e33dd4ccadb861fa09a1978b80211d496cb0b34eed10c5fd1"
+    },
+    {
       "path": "explorations/index.html",
-      "sha256": "21c131425dc3e9f01e73124ea409555ac4500741a4f6b1e47f0dfe6dbbf9147b"
+      "sha256": "086a5191c42bba9e697cffcb7d7d837f6f50e4019f2f0c40f6090bbbfd82fcf1"
     },
     {
       "path": "index.html",
-      "sha256": "e7ab8b09d49abf773fc8f8e18a520db803916cd6bd9e3c257d30bc859cab52ef"
+      "sha256": "2c447c22b5cc65573e480aa4370af5ead05593c130a9cb6a7555c9736dbc7e2f"
     },
     {
       "path": "previews/mobile/Gallery.html",
@@ -32,7 +120,7 @@
     },
     {
       "path": "previews/mobile/assets/app.js",
-      "sha256": "0a62f65c8b9be1c1fc3e4a16da7a784ff97efb2145bece368a55c87eb1597acd"
+      "sha256": "2108e0b10d983615653bf57af28301315ab69533392123fe6fd3e12a362d4fd2"
     },
     {
       "path": "previews/mobile/assets/poppins-400.ttf",
@@ -60,7 +148,7 @@
     },
     {
       "path": "previews/mobile/assets/styles.css",
-      "sha256": "2c2854663e0e7118d32c745343cf04b1783b3e8916372055ed51f715d84f038e"
+      "sha256": "797f026048353ea0135d7875ff45ddc5aef95010553d3986f561cde28a12c99f"
     },
     {
       "path": "previews/mobile/assets/video-preview.svg",
@@ -315,6 +403,30 @@
       "sha256": "b9a9158129f64e5c23ab1b7bb24634eec06f035179fb76510aaf783e78fe59e2"
     },
     {
+      "path": "references/live-sevas/2026-11-13/gaj-mahalakshmi-hero.jpeg",
+      "sha256": "989b12bf0479fd0e286cf555730a5c4853b8da41cc83186691d8b57b428e9f93"
+    },
+    {
+      "path": "references/live-sevas/2026-11-13/gaj-mahalakshmi-temple.png",
+      "sha256": "b130e77f7c1d4ed5a9e12de904e90de37b375d0dea4a7d33089252c09b6d7c6f"
+    },
+    {
+      "path": "references/live-sevas/2026-11-13/rahu-hero.jpeg",
+      "sha256": "cc04ee0783bfc6b0457b9957e565cb8cba24d3908b1e99f1f69efa06b83dbbe3"
+    },
+    {
+      "path": "references/live-sevas/2026-11-13/rahu-temple.jpeg",
+      "sha256": "2aa3697dcfcbe78b9f934517aa6f2070fb4aa2e85cda102f64c63cbd02d22a31"
+    },
+    {
+      "path": "references/live-sevas/2026-11-13/triyuginarayan-hero.jpeg",
+      "sha256": "9f68a81ad3e9ce12d0b8317976f80c22b7f610139e446e6732adf3dacf452c70"
+    },
+    {
+      "path": "references/live-sevas/2026-11-13/triyuginarayan-temple.jpeg",
+      "sha256": "74492633d08ead01ff2de91c1da75614801e03797a13baf21ecd8c3c2db57741"
+    },
+    {
       "path": "robots.txt",
       "sha256": "16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95"
     },
@@ -324,7 +436,7 @@
     },
     {
       "path": "walkthroughs/assets/guide.css",
-      "sha256": "6c63b3bf6ea15d7831783af5618f3c26b2210f73eb92aef259186ca3d1cfeaeb"
+      "sha256": "8081bd8bc9eed1be356f84dd04dfa1e61fa73228de22059958944750d92cce1b"
     },
     {
       "path": "walkthroughs/assets/guide.js",
@@ -332,7 +444,7 @@
     },
     {
       "path": "walkthroughs/index.html",
-      "sha256": "8ea030c9da64b7cfb266ed33bb818a988b776061063a5cddf041d968173c06c0"
+      "sha256": "550fc91501b9b9be6e11fce134da19b1d8a88743d01035cfa12a04735f256e91"
     }
   ]
 }
