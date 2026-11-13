@@ -14,4 +14,7 @@ This site and its static files are public. Noindex metadata requests exclusion f
 supporting search engines; it does not restrict access or forwarding.
 
 The exact exported source revision and asset checksums are in preview-info.json.
-Updates are deliberate snapshots, not automatic publication of every private draft.
+The private workspace’s Publish review preview Action refreshes this site after
+relevant changes merge to main. Branch work is not published before merge. The
+URL stays fixed; preview-info.json identifies the latest successfully exported
+source commit. Publication remains separate from final engineering approval.
