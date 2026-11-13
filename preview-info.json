@@ -1,8 +1,8 @@
 {
   "source_repository": "https://github.com/suyashb734/jaibhakti-design",
-  "source_commit": "eddb9484d490333c6837b747b4edb568932a1e54",
+  "source_commit": "440ca00aaf50d7c20e16566bbd586c549b00d831",
   "working_tree_dirty": false,
-  "built_at_utc": "2026-11-13T12:18:34.730039+00:00",
+  "built_at_utc": "2026-11-13T12:34:50.682675+00:00",
   "status": "design_review_snapshot_not_new_handoff_approval",
   "search_indexing": "noindex requested; public hosting is not access control",
   "files": [
@@ -104,7 +104,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "2c447c22b5cc65573e480aa4370af5ead05593c130a9cb6a7555c9736dbc7e2f"
+      "sha256": "e80150bced83d064d4493e5fb407e18ed66710124efa1f990fc55f7e5218cf9c"
     },
     {
       "path": "previews/mobile/Gallery.html",
@@ -112,7 +112,7 @@
     },
     {
       "path": "previews/mobile/Prototype.html",
-      "sha256": "8b57f4b183d86a036dbdca1d7ff374f29199829f92ab66c9273b7be761216690"
+      "sha256": "c2932324128e93eef261e79566f9c6216f27e001a266d7aa5f8daeea46eb07d4"
     },
     {
       "path": "previews/mobile/assets/Poppins-License.txt",
@@ -120,7 +120,15 @@
     },
     {
       "path": "previews/mobile/assets/app.js",
-      "sha256": "2108e0b10d983615653bf57af28301315ab69533392123fe6fd3e12a362d4fd2"
+      "sha256": "93377499ec9fad039f3d2c046c6ace643fc26b25ff5aef05f0839b5ec24a5dbb"
+    },
+    {
+      "path": "previews/mobile/assets/components.js",
+      "sha256": "775b4483db8d024cbc361a3cf68d88c7a5884d58930d63d8be92d83cbdfbd7f1"
+    },
+    {
+      "path": "previews/mobile/assets/fixtures.js",
+      "sha256": "2f52ca59519c2072da3a7b1b321ecf59a1768f9ac99b735f21775172ff1f82a7"
     },
     {
       "path": "previews/mobile/assets/poppins-400.ttf",
@@ -145,6 +153,46 @@
     {
       "path": "previews/mobile/assets/sample-seva-preview.webm",
       "sha256": "872d31160bba5793ed742403149876071663a01c0d1867a42f95549609bc981d"
+    },
+    {
+      "path": "previews/mobile/assets/screen-index.js",
+      "sha256": "e261d9e5d1bdca8d68bb0d22a55036365d1694aa46c5422ece2dd0fb94c3fa9d"
+    },
+    {
+      "path": "previews/mobile/assets/screens/beneficiary.js",
+      "sha256": "a6148c1aa343655c5f13e6d0d3532ac121155446ddee6dc67f1e2ed0ce753f6b"
+    },
+    {
+      "path": "previews/mobile/assets/screens/bookings.js",
+      "sha256": "5bf3e0723bf99182d61490ebd9cdb1c0033f5f132bdd9d00f9d4beac52045291"
+    },
+    {
+      "path": "previews/mobile/assets/screens/checkout.js",
+      "sha256": "4f33f382da01241c853923d27d98713a170c989b76ed0e0fce1925a7d52dc4ef"
+    },
+    {
+      "path": "previews/mobile/assets/screens/discovery.js",
+      "sha256": "4f5181089d098cadd18ddf7efb07f84da11c8dc5d93bb50829caa6791f3d0b23"
+    },
+    {
+      "path": "previews/mobile/assets/screens/examples.js",
+      "sha256": "ebfd8b369ff87f4c70130fdf5aecb3249bca5be4f04ecefe588d387434623737"
+    },
+    {
+      "path": "previews/mobile/assets/screens/media.js",
+      "sha256": "46a865c18e14237a3d96c65dbeb789778416a17cb2b6cfa1657b5f7dd22c1e51"
+    },
+    {
+      "path": "previews/mobile/assets/screens/nirantar.js",
+      "sha256": "5f8192eecbb71999cf0f5d9f3eab2f2a2fca2c95b958ac770e51079144b43e7d"
+    },
+    {
+      "path": "previews/mobile/assets/screens/occurrence.js",
+      "sha256": "c81fefb4959da65772e0ba40c1c04235920ed1cb1d9779e157738d9cbc0f7cb4"
+    },
+    {
+      "path": "previews/mobile/assets/screens/support.js",
+      "sha256": "06d52830b8f80e0e5eb1eaa0ee03c0fdc38fb626266495524c317ed074d02e9c"
     },
     {
       "path": "previews/mobile/assets/styles.css",
