@@ -1,0 +1,338 @@
+{
+  "source_repository": "https://github.com/suyashb734/jaibhakti-design",
+  "source_commit": "dfccf302d16b6e9ec51c3b98f5b81d4dd96155bd",
+  "working_tree_dirty": false,
+  "built_at_utc": "2026-11-13T10:13:42.192351+00:00",
+  "status": "design_review_snapshot_not_new_handoff_approval",
+  "search_indexing": "noindex requested; public hosting is not access control",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "explorations/index.html",
+      "sha256": "21c131425dc3e9f01e73124ea409555ac4500741a4f6b1e47f0dfe6dbbf9147b"
+    },
+    {
+      "path": "index.html",
+      "sha256": "e7ab8b09d49abf773fc8f8e18a520db803916cd6bd9e3c257d30bc859cab52ef"
+    },
+    {
+      "path": "previews/mobile/Gallery.html",
+      "sha256": "8037f8026df8d30460cf7deb3fbd17852c3c28da6533008cded4e38cee9f6b01"
+    },
+    {
+      "path": "previews/mobile/Prototype.html",
+      "sha256": "8b57f4b183d86a036dbdca1d7ff374f29199829f92ab66c9273b7be761216690"
+    },
+    {
+      "path": "previews/mobile/assets/Poppins-License.txt",
+      "sha256": "6be04893d770899a015649c7aa3b582f871b272f8747a92b78b17c3e5c8b2573"
+    },
+    {
+      "path": "previews/mobile/assets/app.js",
+      "sha256": "0a62f65c8b9be1c1fc3e4a16da7a784ff97efb2145bece368a55c87eb1597acd"
+    },
+    {
+      "path": "previews/mobile/assets/poppins-400.ttf",
+      "sha256": "cdedb1729acac414ed01744a11da7badb86adf13108e7bd3fa161b9323f7fe54"
+    },
+    {
+      "path": "previews/mobile/assets/poppins-500.ttf",
+      "sha256": "fcff04f4bec2b3636f05ed894dc1f9a752c4cb587ee49857ec7a82abaf6ca016"
+    },
+    {
+      "path": "previews/mobile/assets/poppins-600.ttf",
+      "sha256": "dae40ca7b35fe7501bda2e4140a6860b1db47330be5d3c8ab6971fd83a70e9a5"
+    },
+    {
+      "path": "previews/mobile/assets/poppins-700.ttf",
+      "sha256": "1984efdda0fbe207d7ac20feac2ba7c2768c92a90094b02a206c9d58cc30ff2e"
+    },
+    {
+      "path": "previews/mobile/assets/sample-media.js",
+      "sha256": "682d2544b1ddfeeaae8715208848d7f676636c4837200158e10b3d9aea7aee7a"
+    },
+    {
+      "path": "previews/mobile/assets/sample-seva-preview.webm",
+      "sha256": "872d31160bba5793ed742403149876071663a01c0d1867a42f95549609bc981d"
+    },
+    {
+      "path": "previews/mobile/assets/styles.css",
+      "sha256": "2c2854663e0e7118d32c745343cf04b1783b3e8916372055ed51f715d84f038e"
+    },
+    {
+      "path": "previews/mobile/assets/video-preview.svg",
+      "sha256": "9c5bf1971920b4315e5b5f14a666c40f5c98a1d411a4b153971b6db4dddf4412"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/01_Home.png",
+      "sha256": "083ddb5342476c75d7ed37262b4a3ff5403e59d7583e94c9a2881c779413c3a0"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/02_Profile.png",
+      "sha256": "ad359a4d5c82545088d415a965654cfed14097062839079bd0ba2375979102a4"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/03_Bookings_Nirantar.png",
+      "sha256": "f685abd994ba12a6de6baea514cfef57417dcd5070f0575c2b1288541add2a6d"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/04_Bookings_Upcoming.png",
+      "sha256": "3d56e9e89cb4538adf2e575db8dcf685e4d733b3f12b90a92a0474413ed9ab86"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/05_Bookings_Completed.png",
+      "sha256": "ed53689f083fa8be5a222fed9f83a64f65dad6fe276bb53aa1e3d37f6fa3a778"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/06_Bookings_Sections.png",
+      "sha256": "268e6a179fc36d4f7e37c7a2c16b307a9aa65ec918f62cbac710a8c3ee123166"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/07_Nirantar_Active.png",
+      "sha256": "9221b6e38d9a17ce4f3e7dd806215088756cf08ea0d74a0129538db0e8b27dda"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/08_Nirantar_Registered.png",
+      "sha256": "c2d4383050309001fd6870b589bf7974c9ee53df99d7e747914139d752a47203"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/09_Nirantar_Retrying.png",
+      "sha256": "168147a9127d0e640363c7857a99608dd859248925057af234cfd3e8d96c7546"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/10_Nirantar_Inactive.png",
+      "sha256": "9b73216551930e17ec70ad6cc67613b259e96b272b1bd80b9a86ada4416e5eb4"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/11_Nirantar_Cancelled.png",
+      "sha256": "dd389e9d1fbcf87efa20374d9adb6db4e0578acb5033bdbe073fed75a6f123c4"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/12_Nirantar_Milestone.png",
+      "sha256": "b7a222264560bc8e600b3812ffd3622bd273535abe4f53277b883e310a4d6ece"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/13_Nirantar_Before_First.png",
+      "sha256": "0ae6508b2eed9ba048ea1335d671b818c91f029717dc47b021e7908f4706bb02"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/14_Nirantar_Synchronizing.png",
+      "sha256": "1d4ce6e4385811745615bff9037af53580d1599da5a227f3cdc68faeb7383c18"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/15_Occurrence_History.png",
+      "sha256": "a55712eaa70567d562c9ce217d0a3eceb51f890dc95c818ec5d515ac8a3a2ac0"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/16_Discontinued_History.png",
+      "sha256": "c5abf5b6bc840e9058f18b66962154c2d98e25f20526e7afca3a1a4449f094b8"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/17_Occurrence_Scheduled.png",
+      "sha256": "288d84feb21a9b535836accc4eb2e8e4af6bf8fa254445e5b42e67ccc1d0d85f"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/18_Occurrence_Registered.png",
+      "sha256": "60c60f54c3158d46427b375a081f793e2627fef1f87e87e746ded2745d3c166d"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/19_Occurrence_One_Time.png",
+      "sha256": "2f966e823092aec1c23149413a09b157522d7fd41dd75131fff78cfd2da1f947"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/20_Occurrence_Completed.png",
+      "sha256": "8313befdf1a7b88a924caa866124ba6f9224831b5a2b916a572401d53d94c677"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/21_Occurrence_Preparing.png",
+      "sha256": "9d6715eb9a0d03cd6d9339ed2aae29154422ce659c6f21e2046e9bc93d79738a"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/22_Certificate_Ready_Only.png",
+      "sha256": "53089b9eb0ebf6ce8e3fd840c65f412dcf27b2cd7b7fe9e6f7c48917cbfd92ab"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/23_Videos_Ready_Only.png",
+      "sha256": "6261d7c214fe7de5dd0d67ef97288f9605d22184a3f46d0a87381c4e8cb30b8e"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/24_Occurrence_Discontinued.png",
+      "sha256": "400b3b7cac54d1964a9c7af5b6131800d6467e19efafc1a03de43f43eeaef9f9"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/25_Media_Overdue.png",
+      "sha256": "8e4ee6da87f2609624afc833deeb1540e88a9401cd0ceacf70dd51dc0a0788ec"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/26_Certificate_Viewer.png",
+      "sha256": "0f93545ad5876b915c7fc66c29c6ce5d8afc842ec9ed4a2aba1d6c4bcb6ec152"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/27_Video_Viewer.png",
+      "sha256": "108bf82e7744881b6d122a162ff63f205b64a2a8774e4f5cbbaa6fb879c0bc53"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/28_Videos_Partial_Readiness.png",
+      "sha256": "3724154bf24fcda9761caca0559b2c38add12b766ad7ebd168db8602c6032abe"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/29_Video_Error.png",
+      "sha256": "a39f12fe0d44b5aeb82a4be88d6c0c088970822e433bc7b0975a3624d3281011"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/30_Edit_Beneficiary.png",
+      "sha256": "6ff258cd468d6396bd8b67e6f276334719aa6a4ad1942cb25df0ba1178dc5edb"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/31_Beneficiary_Locked.png",
+      "sha256": "2ea72c614f6c13653aca8081076ac42b4a7d845f808c609d8b41d0be3a714433"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/32_Beneficiary_Validation.png",
+      "sha256": "1ec8d92fcc3290813e6261b2beb51bda39dfec99e8e9ee687aa53974edd95eb0"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/33_Your_Details.png",
+      "sha256": "62c8915365bec631d82fb1e87a92a8a9118d196568825b6f7534cc1b94196026"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/34_Verify_Phone.png",
+      "sha256": "a9aa493610118d31c8b5b61baf1d72170ca33ede487d359c012beef99772ff6f"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/35_Review_Payment.png",
+      "sha256": "4df02f0d9865c9b80fa37a7f3209084b269e2143a286741fa542996a9c7b6048"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/36_Payment_Processing.png",
+      "sha256": "a0997d8342e791b476a7841e1b33c2014c3c8bd248431cad057f90089f35564c"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/37_Registration_Pending.png",
+      "sha256": "4f2c0973597a3e7f50a08fbee41d7af238ee6f7ecf043d52a0cf8803b4a5e178"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/38_Payment_Failed.png",
+      "sha256": "ff5723dee53f2fe0ee2d6bf5f80684e1059afb13e04518a1b01258c71b42a9cf"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/39_Booking_Confirmed.png",
+      "sha256": "ea28d24b4bef635ffe7d977952a6852368a551c349c17cb63354cdcc5a2ccc8d"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/40_Empty_Nirantar.png",
+      "sha256": "a211afcd5f76cbc53cb44fd475e9e03fcd1d03c72a47e7f506732799e4a4cfa6"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/41_Empty_Upcoming.png",
+      "sha256": "11ab3328f737b7735a65aa46ff69477e87eb01dbb26e327c210b08691cd8829b"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/42_Empty_Completed.png",
+      "sha256": "5f75c20832415ffd8b4d17f0c8736ae44e0e272a32d41cc726bbc3cd62364e58"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/43_Loading.png",
+      "sha256": "9ccc6f636a294f89ff121eaad2a8ed19f621ea6f9b0cdda53b9e6a59e845708d"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/44_Load_Error.png",
+      "sha256": "bf0bc2a0e85aeabaaa7aef95be16e21101a02cb2a944b1033caece24574aa543"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/45_Cadence_Variants.png",
+      "sha256": "82073e5276b6463b385f2054d6c4759922681bf0738fb41781a786b8995dcbda"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/46_Support.png",
+      "sha256": "daaeb8c2f5662271daf63062dc0babaf79b5681e5402d0ea11c95454f07b0fb6"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/47_Retry_Success.png",
+      "sha256": "9c57737f6744408dad62da6fb419c80574bea735ab8dba099455078b5d4273e4"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/48_Older_Certificate.png",
+      "sha256": "a55712eaa70567d562c9ce217d0a3eceb51f890dc95c818ec5d515ac8a3a2ac0"
+    },
+    {
+      "path": "references/daan-seva-candidate/Revised_Designs/screens/49_Long_Beneficiary_Names.png",
+      "sha256": "8a0bdbe00ad4752e780693d7d42723160119060f8e59dd8f8e0b2132b4716472"
+    },
+    {
+      "path": "references/initial-prototype/Jai Bhakti App.html",
+      "sha256": "2e05ccfa87db8bb7970302f818d6d4a961647fbc423b188b8e01fc03fe7f32ef"
+    },
+    {
+      "path": "references/initial-prototype/screens/bhent.png",
+      "sha256": "69e4f4c57762c24ecde673e1333eda002cd31ee422b7ee985a4aa3d259a7c104"
+    },
+    {
+      "path": "references/initial-prototype/screens/cart.png",
+      "sha256": "a7a52e0145e2db2e3901e2625d2bddf87499fad6354f2d64b396421fbf0955c7"
+    },
+    {
+      "path": "references/initial-prototype/screens/detail.png",
+      "sha256": "afad71feaf7fa9c5b2dcd40f94c762fc1f7c5d8f8645c33a5b1cd54898322f24"
+    },
+    {
+      "path": "references/initial-prototype/screens/home.png",
+      "sha256": "647f7dcd041ee7622c5aa60fa8623724b409580b2ef5f3263cc0fd9856359ccb"
+    },
+    {
+      "path": "references/initial-prototype/screens/mandate.png",
+      "sha256": "9d15293bab515c733b68ad05fbfd8b57de1163fa9cf624bb76a3bfdb3a2cd5c1"
+    },
+    {
+      "path": "references/initial-prototype/screens/pay.png",
+      "sha256": "f017d54594c081da6076b864012c9796c4bf04eda6343607bc57021614f68dec"
+    },
+    {
+      "path": "references/initial-prototype/screens/profile.png",
+      "sha256": "fd6cd156a193bfbe70e9c9a19063d311490e8649b1dbc7efc0ed9ef1e72dc726"
+    },
+    {
+      "path": "references/initial-prototype/screens/seva.png",
+      "sha256": "3ff72b6cbfeea157369fdf803dcec503292ff798bad627c4e4e4f0f4d156ef26"
+    },
+    {
+      "path": "references/initial-prototype/screens/sevaOrder.png",
+      "sha256": "7cec01829ba3ac9598fc209a61a62dbfe65a7fe48e3b70880517d4f38e436c46"
+    },
+    {
+      "path": "references/initial-prototype/screens/sevaSetup.png",
+      "sha256": "d4343dca3891f002319edeaaad7c2445018e3ecbf8cc98192c1b26a5c42be1fe"
+    },
+    {
+      "path": "references/initial-prototype/screens/sevaSuccess.png",
+      "sha256": "d7053de00304169470cf96c5a7492759567842c7989c4754b5e227421fa0739b"
+    },
+    {
+      "path": "references/initial-prototype/screens/success.png",
+      "sha256": "b9a9158129f64e5c23ab1b7bb24634eec06f035179fb76510aaf783e78fe59e2"
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95"
+    },
+    {
+      "path": "walkthroughs/assets/catalog.generated.js",
+      "sha256": "f4ac076da6a6ed2d192e24f76982673e8fe5f0f3ddb13068df3a66f5ea87ca83"
+    },
+    {
+      "path": "walkthroughs/assets/guide.css",
+      "sha256": "6c63b3bf6ea15d7831783af5618f3c26b2210f73eb92aef259186ca3d1cfeaeb"
+    },
+    {
+      "path": "walkthroughs/assets/guide.js",
+      "sha256": "01403842ed07a11a8d1c63b28f0826352004f73c971c8bd2ad93942b68f9e926"
+    },
+    {
+      "path": "walkthroughs/index.html",
+      "sha256": "8ea030c9da64b7cfb266ed33bb818a988b776061063a5cddf041d968173c06c0"
+    }
+  ]
+}

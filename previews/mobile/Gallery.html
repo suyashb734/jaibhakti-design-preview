@@ -1,0 +1,1849 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Daan Seva revised screen designs</title>
+    <style>
+      @font-face {
+        font-family: Poppins;
+        src: url(assets/poppins-400.ttf);
+        font-weight: 400;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: Poppins;
+        src: url(assets/poppins-600.ttf);
+        font-weight: 600;
+        font-display: swap;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Poppins, sans-serif;
+        margin: 0;
+        background: #f6f1e9;
+        color: #3f2a1b;
+        font-size: 14px;
+        line-height: 1.7;
+      }
+      a {
+        color: #883713;
+        text-underline-offset: 3px;
+      }
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid #006699;
+        outline-offset: 4px;
+      }
+      header {
+        padding: 46px 40px 30px;
+        max-width: 1440px;
+        margin: auto;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-size: 10px;
+        color: #8e633b;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 38px;
+        font-weight: 600;
+        letter-spacing: -1.4px;
+        line-height: 1.3;
+        max-width: 800px;
+        margin: 0 0 15px;
+      }
+      header p {
+        max-width: 820px;
+        color: #765e48;
+        font-size: 14px;
+        margin: 0 0 20px;
+      }
+      .links {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .primary {
+        display: inline-block;
+        background: #542810;
+        color: #fff5df;
+        border-radius: 999px;
+        padding: 12px 22px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .secondary {
+        font-size: 12px;
+      }
+      .filters {
+        padding: 0 40px 27px;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        max-width: 1440px;
+        margin: auto;
+      }
+      .filter {
+        border: 1px solid #dac5a8;
+        border-radius: 999px;
+        padding: 10px 15px;
+        font-family: inherit;
+        font-size: 11px;
+        background: white;
+        color: #67452c;
+        cursor: pointer;
+        min-height: 43px;
+      }
+      .filter.active {
+        background: #f5d184;
+        border-color: #d5ac5d;
+        color: #542810;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 25px;
+        padding: 0 40px 50px;
+        max-width: 1440px;
+        margin: auto;
+      }
+      .design {
+        border: 1px solid #e2d5c2;
+        background: #fff;
+        border-radius: 17px;
+        overflow: hidden;
+        min-width: 0;
+        box-shadow: 0 4px 20px #45281309;
+      }
+      .preview {
+        display: block;
+        height: 510px;
+        overflow: hidden;
+        background: #fff6e1;
+        border-bottom: 1px solid #ecdecb;
+      }
+      .preview img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-position: top;
+        max-width: 100%;
+      }
+      .caption {
+        padding: 16px;
+      }
+      .caption > span {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #8c7258;
+      }
+      .caption h2 {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.6;
+        margin: 6px 0 13px;
+      }
+      .caption > div {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .caption a {
+        font-size: 10px;
+      }
+      .design[hidden] {
+        display: none;
+      }
+      footer {
+        font-size: 11px;
+        color: #795f47;
+        padding: 0 40px 50px;
+        max-width: 1440px;
+        margin: auto;
+      }
+      .overview .filters,
+      .overview footer,
+      .overview .secondary {
+        display: none;
+      }
+      .overview .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .overview .design .preview {
+        height: 500px;
+      }
+      .overview header {
+        padding: 35px 40px 26px;
+      }
+      .overview header p {
+        margin-bottom: 0;
+      }
+      .overview .links {
+        display: none;
+      }
+      .overview .caption > div {
+        display: none;
+      }
+      .overview .caption {
+        padding: 12px 18px;
+      }
+      .overview .caption h2 {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+      .overview h1 {
+        font-size: 34px;
+      }
+      .overview .grid {
+        padding-bottom: 35px;
+      }
+      @media (max-width: 1150px) {
+        .grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 20px;
+        }
+        .preview {
+          height: 480px;
+        }
+      }
+      @media (max-width: 800px) {
+        header {
+          padding: 30px 22px 24px;
+        }
+        h1 {
+          font-size: 30px;
+        }
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          padding: 0 22px 35px;
+          gap: 18px;
+        }
+        .filters {
+          padding: 0 22px 24px;
+        }
+        .preview {
+          height: 440px;
+        }
+        footer {
+          padding: 0 22px 35px;
+        }
+      }
+      @media (max-width: 500px) {
+        .grid {
+          grid-template-columns: 1fr;
+          max-width: 434px;
+        }
+        .preview {
+          height: 550px;
+        }
+        .caption h2 {
+          font-size: 15px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        .caption a {
+          font-size: 12px;
+        }
+        .caption > span {
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="eyebrow">Jai Bhakti · Revised Daan Seva designs</div>
+      <h1>Reference captures and working preview</h1>
+      <p>
+        These 49 thumbnails are the frozen imported reference captures. Open
+        prototype links to inspect the editable working source. Generate new
+        capture artifacts after changes; these reference images do not update
+        automatically.
+      </p>
+      <div class="links">
+        <a class="primary" href="Prototype.html">Open clickable prototype →</a
+        ><a
+          class="secondary"
+          href="https://github.com/suyashb734/jaibhakti-design/blob/main/references/daan-seva-candidate/Revised_Designs/Design_Changes_Applied.md"
+          >View the applied fix list ↗</a
+        ><a
+          class="secondary"
+          href="https://github.com/suyashb734/jaibhakti-design/blob/main/references/daan-seva-candidate/Design_Review.html"
+          >Original design review ↗</a
+        >
+      </div>
+    </header>
+    <nav class="filters" aria-label="Filter screen groups">
+      <button class="filter active" data-group="all" aria-pressed="true">
+        All screens</button
+      ><button class="filter" data-group="Main screens" aria-pressed="false">
+        Main screens</button
+      ><button class="filter" data-group="My Bookings" aria-pressed="false">
+        My Bookings</button
+      ><button class="filter" data-group="Nirantar detail" aria-pressed="false">
+        Nirantar detail</button
+      ><button class="filter" data-group="Dated seva" aria-pressed="false">
+        Dated seva</button
+      ><button class="filter" data-group="Evidence" aria-pressed="false">
+        Evidence</button
+      ><button class="filter" data-group="Beneficiary" aria-pressed="false">
+        Beneficiary</button
+      ><button
+        class="filter"
+        data-group="Details and payment"
+        aria-pressed="false"
+      >
+        Details and payment</button
+      ><button
+        class="filter"
+        data-group="Additional states"
+        aria-pressed="false"
+      >
+        Additional states
+      </button>
+    </nav>
+    <main class="grid">
+      <article class="design" data-group="Main screens" data-route="home">
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/01_Home.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Home design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/01_Home.png"
+            alt="Revised Home mobile screen"
+            loading="lazy"
+            width="780"
+            height="1854"
+        /></a>
+        <div class="caption">
+          <span>Main screens</span>
+          <h2>Home</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/01_Home.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#home">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article class="design" data-group="Main screens" data-route="profile">
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/02_Profile.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Profile design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/02_Profile.png"
+            alt="Revised Profile mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Main screens</span>
+          <h2>Profile</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/02_Profile.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#profile">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="My Bookings"
+        data-route="bookings/nirantar"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/03_Bookings_Nirantar.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Option A · Nirantar design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/03_Bookings_Nirantar.png"
+            alt="Revised Option A · Nirantar mobile screen"
+            loading="lazy"
+            width="780"
+            height="3750"
+        /></a>
+        <div class="caption">
+          <span>My Bookings</span>
+          <h2>Option A · Nirantar</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/03_Bookings_Nirantar.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#bookings/nirantar">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="My Bookings"
+        data-route="bookings/upcoming"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/04_Bookings_Upcoming.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Option A · Upcoming design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/04_Bookings_Upcoming.png"
+            alt="Revised Option A · Upcoming mobile screen"
+            loading="lazy"
+            width="780"
+            height="1744"
+        /></a>
+        <div class="caption">
+          <span>My Bookings</span>
+          <h2>Option A · Upcoming</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/04_Bookings_Upcoming.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#bookings/upcoming">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="My Bookings"
+        data-route="bookings/completed"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/05_Bookings_Completed.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Option A · Completed design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/05_Bookings_Completed.png"
+            alt="Revised Option A · Completed mobile screen"
+            loading="lazy"
+            width="780"
+            height="3358"
+        /></a>
+        <div class="caption">
+          <span>My Bookings</span>
+          <h2>Option A · Completed</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/05_Bookings_Completed.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#bookings/completed">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article class="design" data-group="My Bookings" data-route="sections">
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/06_Bookings_Sections.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Option B · Sections design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/06_Bookings_Sections.png"
+            alt="Revised Option B · Sections mobile screen"
+            loading="lazy"
+            width="780"
+            height="3606"
+        /></a>
+        <div class="caption">
+          <span>My Bookings</span>
+          <h2>Option B · Sections</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/06_Bookings_Sections.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#sections">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article class="design" data-group="Nirantar detail" data-route="plan/N1">
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/07_Nirantar_Active.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Active · Awaiting next payment design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/07_Nirantar_Active.png"
+            alt="Revised Active · Awaiting next payment mobile screen"
+            loading="lazy"
+            width="780"
+            height="3716"
+        /></a>
+        <div class="caption">
+          <span>Nirantar detail</span>
+          <h2>Active · Awaiting next payment</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/07_Nirantar_Active.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#plan/N1">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article class="design" data-group="Nirantar detail" data-route="plan/N2">
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/08_Nirantar_Registered.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Active · Next seva scheduled design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/08_Nirantar_Registered.png"
+            alt="Revised Active · Next seva scheduled mobile screen"
+            loading="lazy"
+            width="780"
+            height="3806"
+        /></a>
+        <div class="caption">
+          <span>Nirantar detail</span>
+          <h2>Active · Next seva scheduled</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/08_Nirantar_Registered.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#plan/N2">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article class="design" data-group="Nirantar detail" data-route="plan/N3">
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/09_Nirantar_Retrying.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Payment retrying design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/09_Nirantar_Retrying.png"
+            alt="Revised Payment retrying mobile screen"
+            loading="lazy"
+            width="780"
+            height="4022"
+        /></a>
+        <div class="caption">
+          <span>Nirantar detail</span>
+          <h2>Payment retrying</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/09_Nirantar_Retrying.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#plan/N3">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Nirantar detail"
+        data-route="plan/inactive"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/10_Nirantar_Inactive.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Inactive design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/10_Nirantar_Inactive.png"
+            alt="Revised Inactive mobile screen"
+            loading="lazy"
+            width="780"
+            height="3750"
+        /></a>
+        <div class="caption">
+          <span>Nirantar detail</span>
+          <h2>Inactive</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/10_Nirantar_Inactive.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#plan/inactive">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Nirantar detail"
+        data-route="plan/cancelled"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/11_Nirantar_Cancelled.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Cancelled design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/11_Nirantar_Cancelled.png"
+            alt="Revised Cancelled mobile screen"
+            loading="lazy"
+            width="780"
+            height="3712"
+        /></a>
+        <div class="caption">
+          <span>Nirantar detail</span>
+          <h2>Cancelled</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/11_Nirantar_Cancelled.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#plan/cancelled">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Nirantar detail"
+        data-route="plan/milestone"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/12_Nirantar_Milestone.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Milestone · 7 of 14 design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/12_Nirantar_Milestone.png"
+            alt="Revised Milestone · 7 of 14 mobile screen"
+            loading="lazy"
+            width="780"
+            height="3920"
+        /></a>
+        <div class="caption">
+          <span>Nirantar detail</span>
+          <h2>Milestone · 7 of 14</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/12_Nirantar_Milestone.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#plan/milestone">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Nirantar detail"
+        data-route="plan/new"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/13_Nirantar_Before_First.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Before the first seva design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/13_Nirantar_Before_First.png"
+            alt="Revised Before the first seva mobile screen"
+            loading="lazy"
+            width="780"
+            height="3206"
+        /></a>
+        <div class="caption">
+          <span>Nirantar detail</span>
+          <h2>Before the first seva</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/13_Nirantar_Before_First.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#plan/new">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Nirantar detail"
+        data-route="plan/sync"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/14_Nirantar_Synchronizing.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Status synchronizing design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/14_Nirantar_Synchronizing.png"
+            alt="Revised Status synchronizing mobile screen"
+            loading="lazy"
+            width="780"
+            height="3916"
+        /></a>
+        <div class="caption">
+          <span>Nirantar detail</span>
+          <h2>Status synchronizing</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/14_Nirantar_Synchronizing.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#plan/sync">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Nirantar detail"
+        data-route="history/N1"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/15_Occurrence_History.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Full date history design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/15_Occurrence_History.png"
+            alt="Revised Full date history mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Nirantar detail</span>
+          <h2>Full date history</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/15_Occurrence_History.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#history/N1">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Nirantar detail"
+        data-route="history/N3"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/16_Discontinued_History.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full History · Discontinued date design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/16_Discontinued_History.png"
+            alt="Revised History · Discontinued date mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Nirantar detail</span>
+          <h2>History · Discontinued date</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/16_Discontinued_History.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#history/N3">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Dated seva"
+        data-route="occurrence/U1"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/17_Occurrence_Scheduled.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Scheduled design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/17_Occurrence_Scheduled.png"
+            alt="Revised Scheduled mobile screen"
+            loading="lazy"
+            width="780"
+            height="2236"
+        /></a>
+        <div class="caption">
+          <span>Dated seva</span>
+          <h2>Scheduled</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/17_Occurrence_Scheduled.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#occurrence/U1">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Dated seva"
+        data-route="occurrence/registered"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/18_Occurrence_Registered.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Registered design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/18_Occurrence_Registered.png"
+            alt="Revised Registered mobile screen"
+            loading="lazy"
+            width="780"
+            height="2236"
+        /></a>
+        <div class="caption">
+          <span>Dated seva</span>
+          <h2>Registered</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/18_Occurrence_Registered.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#occurrence/registered">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Dated seva"
+        data-route="occurrence/U2"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/19_Occurrence_One_Time.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full One time scheduled design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/19_Occurrence_One_Time.png"
+            alt="Revised One time scheduled mobile screen"
+            loading="lazy"
+            width="780"
+            height="1928"
+        /></a>
+        <div class="caption">
+          <span>Dated seva</span>
+          <h2>One time scheduled</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/19_Occurrence_One_Time.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#occurrence/U2">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Dated seva"
+        data-route="occurrence/C1"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/20_Occurrence_Completed.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Performed · Evidence ready design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/20_Occurrence_Completed.png"
+            alt="Revised Performed · Evidence ready mobile screen"
+            loading="lazy"
+            width="780"
+            height="3424"
+        /></a>
+        <div class="caption">
+          <span>Dated seva</span>
+          <h2>Performed · Evidence ready</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/20_Occurrence_Completed.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#occurrence/C1">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Dated seva"
+        data-route="occurrence/C2"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/21_Occurrence_Preparing.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Performed · Evidence preparing design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/21_Occurrence_Preparing.png"
+            alt="Revised Performed · Evidence preparing mobile screen"
+            loading="lazy"
+            width="780"
+            height="3050"
+        /></a>
+        <div class="caption">
+          <span>Dated seva</span>
+          <h2>Performed · Evidence preparing</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/21_Occurrence_Preparing.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#occurrence/C2">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Dated seva"
+        data-route="occurrence/partial-certificate"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/22_Certificate_Ready_Only.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Certificate ready only design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/22_Certificate_Ready_Only.png"
+            alt="Revised Certificate ready only mobile screen"
+            loading="lazy"
+            width="780"
+            height="2962"
+        /></a>
+        <div class="caption">
+          <span>Dated seva</span>
+          <h2>Certificate ready only</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/22_Certificate_Ready_Only.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#occurrence/partial-certificate"
+              >Open prototype →</a
+            >
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Dated seva"
+        data-route="occurrence/partial-video"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/23_Videos_Ready_Only.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Videos ready only design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/23_Videos_Ready_Only.png"
+            alt="Revised Videos ready only mobile screen"
+            loading="lazy"
+            width="780"
+            height="2962"
+        /></a>
+        <div class="caption">
+          <span>Dated seva</span>
+          <h2>Videos ready only</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/23_Videos_Ready_Only.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#occurrence/partial-video"
+              >Open prototype →</a
+            >
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Dated seva"
+        data-route="occurrence/D1"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/24_Occurrence_Discontinued.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Discontinued design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/24_Occurrence_Discontinued.png"
+            alt="Revised Discontinued mobile screen"
+            loading="lazy"
+            width="780"
+            height="2156"
+        /></a>
+        <div class="caption">
+          <span>Dated seva</span>
+          <h2>Discontinued</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/24_Occurrence_Discontinued.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#occurrence/D1">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Dated seva"
+        data-route="occurrence/overdue"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/25_Media_Overdue.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Media overdue design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/25_Media_Overdue.png"
+            alt="Revised Media overdue mobile screen"
+            loading="lazy"
+            width="780"
+            height="3460"
+        /></a>
+        <div class="caption">
+          <span>Dated seva</span>
+          <h2>Media overdue</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/25_Media_Overdue.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#occurrence/overdue">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article class="design" data-group="Evidence" data-route="certificate/C1">
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/26_Certificate_Viewer.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Certificate viewer design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/26_Certificate_Viewer.png"
+            alt="Revised Certificate viewer mobile screen"
+            loading="lazy"
+            width="780"
+            height="1830"
+        /></a>
+        <div class="caption">
+          <span>Evidence</span>
+          <h2>Certificate viewer</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/26_Certificate_Viewer.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#certificate/C1">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article class="design" data-group="Evidence" data-route="videos/C1">
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/27_Video_Viewer.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full In app video player design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/27_Video_Viewer.png"
+            alt="Revised In app video player mobile screen"
+            loading="lazy"
+            width="780"
+            height="1930"
+        /></a>
+        <div class="caption">
+          <span>Evidence</span>
+          <h2>In app video player</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/27_Video_Viewer.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#videos/C1">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article class="design" data-group="Evidence" data-route="videos/mixed">
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/28_Videos_Partial_Readiness.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Several videos · Partial readiness design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/28_Videos_Partial_Readiness.png"
+            alt="Revised Several videos · Partial readiness mobile screen"
+            loading="lazy"
+            width="780"
+            height="1930"
+        /></a>
+        <div class="caption">
+          <span>Evidence</span>
+          <h2>Several videos · Partial readiness</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/28_Videos_Partial_Readiness.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#videos/mixed">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article class="design" data-group="Evidence" data-route="videos/error">
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/29_Video_Error.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Video loading error design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/29_Video_Error.png"
+            alt="Revised Video loading error mobile screen"
+            loading="lazy"
+            width="780"
+            height="2126"
+        /></a>
+        <div class="caption">
+          <span>Evidence</span>
+          <h2>Video loading error</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/29_Video_Error.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#videos/error">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Beneficiary"
+        data-route="beneficiary/edit"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/30_Edit_Beneficiary.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Edit before first seva design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/30_Edit_Beneficiary.png"
+            alt="Revised Edit before first seva mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Beneficiary</span>
+          <h2>Edit before first seva</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/30_Edit_Beneficiary.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#beneficiary/edit">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Beneficiary"
+        data-route="beneficiary/locked"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/31_Beneficiary_Locked.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Locked after first seva design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/31_Beneficiary_Locked.png"
+            alt="Revised Locked after first seva mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Beneficiary</span>
+          <h2>Locked after first seva</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/31_Beneficiary_Locked.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#beneficiary/locked">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Beneficiary"
+        data-route="beneficiary/error"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/32_Beneficiary_Validation.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Validation error design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/32_Beneficiary_Validation.png"
+            alt="Revised Validation error mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Beneficiary</span>
+          <h2>Validation error</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/32_Beneficiary_Validation.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#beneficiary/error">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Details and payment"
+        data-route="details"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/33_Your_Details.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Enter beneficiary details design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/33_Your_Details.png"
+            alt="Revised Enter beneficiary details mobile screen"
+            loading="lazy"
+            width="780"
+            height="1694"
+        /></a>
+        <div class="caption">
+          <span>Details and payment</span>
+          <h2>Enter beneficiary details</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/33_Your_Details.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#details">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Details and payment"
+        data-route="details/otp"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/34_Verify_Phone.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Phone verification design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/34_Verify_Phone.png"
+            alt="Revised Phone verification mobile screen"
+            loading="lazy"
+            width="780"
+            height="2050"
+        /></a>
+        <div class="caption">
+          <span>Details and payment</span>
+          <h2>Phone verification</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/34_Verify_Phone.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#details/otp">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Details and payment"
+        data-route="review"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/35_Review_Payment.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Review and payment disclosure design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/35_Review_Payment.png"
+            alt="Revised Review and payment disclosure mobile screen"
+            loading="lazy"
+            width="780"
+            height="2066"
+        /></a>
+        <div class="caption">
+          <span>Details and payment</span>
+          <h2>Review and payment disclosure</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/35_Review_Payment.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#review">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Details and payment"
+        data-route="payment/processing"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/36_Payment_Processing.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Payment processing design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/36_Payment_Processing.png"
+            alt="Revised Payment processing mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Details and payment</span>
+          <h2>Payment processing</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/36_Payment_Processing.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#payment/processing">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Details and payment"
+        data-route="payment/pending"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/37_Registration_Pending.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Awaiting confirmation design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/37_Registration_Pending.png"
+            alt="Revised Awaiting confirmation mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Details and payment</span>
+          <h2>Awaiting confirmation</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/37_Registration_Pending.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#payment/pending">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Details and payment"
+        data-route="payment/failed"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/38_Payment_Failed.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Payment failed design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/38_Payment_Failed.png"
+            alt="Revised Payment failed mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Details and payment</span>
+          <h2>Payment failed</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/38_Payment_Failed.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#payment/failed">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Details and payment"
+        data-route="payment/success"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/39_Booking_Confirmed.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Confirmed after payment design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/39_Booking_Confirmed.png"
+            alt="Revised Confirmed after payment mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Details and payment</span>
+          <h2>Confirmed after payment</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/39_Booking_Confirmed.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#payment/success">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Additional states"
+        data-route="empty/nirantar"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/40_Empty_Nirantar.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full No Nirantar bookings design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/40_Empty_Nirantar.png"
+            alt="Revised No Nirantar bookings mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Additional states</span>
+          <h2>No Nirantar bookings</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/40_Empty_Nirantar.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#empty/nirantar">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Additional states"
+        data-route="empty/upcoming"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/41_Empty_Upcoming.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full No upcoming sevas design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/41_Empty_Upcoming.png"
+            alt="Revised No upcoming sevas mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Additional states</span>
+          <h2>No upcoming sevas</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/41_Empty_Upcoming.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#empty/upcoming">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Additional states"
+        data-route="empty/completed"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/42_Empty_Completed.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full No completed sevas design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/42_Empty_Completed.png"
+            alt="Revised No completed sevas mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Additional states</span>
+          <h2>No completed sevas</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/42_Empty_Completed.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#empty/completed">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Additional states"
+        data-route="loading/nirantar"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/43_Loading.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Loading design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/43_Loading.png"
+            alt="Revised Loading mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Additional states</span>
+          <h2>Loading</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/43_Loading.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#loading/nirantar">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Additional states"
+        data-route="error/nirantar"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/44_Load_Error.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Unable to load design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/44_Load_Error.png"
+            alt="Revised Unable to load mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Additional states</span>
+          <h2>Unable to load</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/44_Load_Error.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#error/nirantar">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Additional states"
+        data-route="components/cadences"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/45_Cadence_Variants.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Monthly and lunar cadences design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/45_Cadence_Variants.png"
+            alt="Revised Monthly and lunar cadences mobile screen"
+            loading="lazy"
+            width="780"
+            height="4346"
+        /></a>
+        <div class="caption">
+          <span>Additional states</span>
+          <h2>Monthly and lunar cadences</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/45_Cadence_Variants.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#components/cadences">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Additional states"
+        data-route="support/N1"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/46_Support.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Support with booking reference design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/46_Support.png"
+            alt="Revised Support with booking reference mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Additional states</span>
+          <h2>Support with booking reference</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/46_Support.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#support/N1">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Additional states"
+        data-route="plan/retry-success"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/47_Retry_Success.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Successful retry · Next eligible date design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/47_Retry_Success.png"
+            alt="Revised Successful retry · Next eligible date mobile screen"
+            loading="lazy"
+            width="780"
+            height="4052"
+        /></a>
+        <div class="caption">
+          <span>Additional states</span>
+          <h2>Successful retry · Next eligible date</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/47_Retry_Success.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#plan/retry-success">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Additional states"
+        data-route="history/older"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/48_Older_Certificate.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Older certificate discoverability design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/48_Older_Certificate.png"
+            alt="Revised Older certificate discoverability mobile screen"
+            loading="lazy"
+            width="780"
+            height="1688"
+        /></a>
+        <div class="caption">
+          <span>Additional states</span>
+          <h2>Older certificate discoverability</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/48_Older_Certificate.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#history/older">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="design"
+        data-group="Additional states"
+        data-route="components/long-names"
+      >
+        <a
+          class="preview"
+          href="../../references/daan-seva-candidate/Revised_Designs/screens/49_Long_Beneficiary_Names.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open full Long names and gotra design"
+          ><img
+            src="../../references/daan-seva-candidate/Revised_Designs/screens/49_Long_Beneficiary_Names.png"
+            alt="Revised Long names and gotra mobile screen"
+            loading="lazy"
+            width="780"
+            height="2404"
+        /></a>
+        <div class="caption">
+          <span>Additional states</span>
+          <h2>Long names and gotra</h2>
+          <div>
+            <a
+              href="../../references/daan-seva-candidate/Revised_Designs/screens/49_Long_Beneficiary_Names.png"
+              target="_blank"
+              rel="noopener"
+              >Full PNG ↗</a
+            ><a href="Prototype.html#components/long-names">Open prototype →</a>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      These are revised design screens with sample data. The prototype does not
+      initiate real payments or contact support. The operational decisions in
+      the original brief remain for product and engineering confirmation.
+    </footer>
+    <script>
+      (() => {
+        const buttons = [...document.querySelectorAll(".filter")],
+          cards = [...document.querySelectorAll(".design")];
+        buttons.forEach((b) =>
+          b.addEventListener("click", () => {
+            buttons.forEach((x) => {
+              const active = x === b;
+              x.classList.toggle("active", active);
+              x.setAttribute("aria-pressed", String(active));
+            });
+            cards.forEach(
+              (c) =>
+                (c.hidden =
+                  b.dataset.group !== "all" &&
+                  c.dataset.group !== b.dataset.group),
+            );
+          }),
+        );
+        if (new URLSearchParams(location.search).has("overview")) {
+          document.body.classList.add("overview");
+          const routes = [
+            "home",
+            "bookings/nirantar",
+            "bookings/upcoming",
+            "bookings/completed",
+            "occurrence/C1",
+            "review",
+          ];
+          cards.forEach((c) => {
+            c.hidden = !routes.includes(c.dataset.route);
+            c.style.order = routes.indexOf(c.dataset.route);
+          });
+          document.querySelector("h1").textContent =
+            "Daan Seva revised designs";
+          document.querySelector("header p").textContent =
+            "Main booking screens and the corrected payment review. Complete exports and the connected prototype are included in this folder.";
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Jai Bhakti design walkthroughs</title>
+    <link rel="stylesheet" href="assets/guide.css" />
+    <script src="assets/catalog.generated.js" defer></script>
+    <script src="assets/guide.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">← Design hub</a>
+      <nav aria-label="Review resources">
+        <a href="../explorations/index.html">Explorations</a
+        ><a href="https://github.com/suyashb734/jaibhakti-design/blob/main/START_HERE.md">Project guide</a
+        ><a href="https://github.com/suyashb734/jaibhakti-design/blob/main/releases/README.md">Handoffs</a>
+      </nav>
+    </header>
+    <main>
+      <p class="eyebrow">Jai Bhakti · Design review</p>
+      <h1>Walk through the designs</h1>
+      <p class="intro">
+        See the original final design, review the proposed app experience, or
+        compare open explorations.
+      </p>
+      <div class="layout">
+        <section class="controls" aria-label="Walkthrough controls">
+          <label for="tour">Choose a walkthrough</label>
+          <select id="tour"></select>
+          <p id="tour-status" class="badge"></p>
+          <p id="tour-summary"></p>
+          <a id="context" href="https://github.com/suyashb734/jaibhakti-design/blob/main/walkthroughs/README.md">Context and decisions ↗</a>
+          <hr />
+          <label for="step">Choose a screen</label>
+          <select id="step"></select>
+          <p id="position" class="eyebrow" aria-live="polite"></p>
+          <h2 id="step-title"></h2>
+          <p id="step-note"></p>
+          <div class="paging">
+            <button id="previous" type="button">← Previous</button
+            ><button id="next" type="button">Next →</button>
+          </div>
+          <div class="review-links">
+            <a
+              id="open-source"
+              target="_blank"
+              rel="noopener"
+              href="../previews/mobile/Prototype.html"
+              >Open full design ↗</a
+            ><a
+              id="open-capture"
+              target="_blank"
+              rel="noopener"
+              href="../index.html"
+              >Frozen reference capture ↗</a
+            >
+          </div>
+          <p id="render-status" class="hint" role="status"></p>
+          <p class="hint">
+            The sequence visits sample states. It does not perform a payment or
+            create the later booking records. Scroll inside the preview to
+            inspect longer screens.
+          </p>
+        </section>
+        <section class="preview" aria-label="Selected design screen">
+          <iframe
+            id="preview"
+            title="Selected Jai Bhakti design screen"
+            hidden
+          ></iframe>
+          <img
+            id="capture"
+            alt="Frozen capture of the selected original design screen"
+            hidden
+          />
+        </section>
+      </div>
+      <noscript
+        ><p>
+          Enable JavaScript to use the walkthrough selector. You can also
+          <a href="../previews/mobile/Gallery.html">browse the gallery</a> or
+          <a href="../references/initial-prototype/Jai%20Bhakti%20App.html"
+            >open the original final design</a
+          >.
+        </p></noscript
+      >
+    </main>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Jai Bhakti design preview</title>
+    <link rel="stylesheet" href="walkthroughs/assets/guide.css" />
+    <style>
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+        margin: 32px 0;
+      }
+      .card {
+        background: white;
+        border: 1px solid #e6d4b8;
+        border-radius: 18px;
+        overflow: hidden;
+      }
+      .card img {
+        display: block;
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        object-position: top;
+      }
+      .card div {
+        padding: 22px;
+      }
+      .card h2 {
+        margin-top: 0;
+      }
+      .notice {
+        padding: 20px;
+        border: 1px solid #e6c68c;
+        background: #fff0c8;
+        border-radius: 14px;
+      }
+      .primary {
+        display: inline-block;
+        background: #5b2c12;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+      }
+      .links {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 24px 0;
+      }
+      @media (max-width: 850px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>Jai Bhakti · Design preview</strong>
+      <nav aria-label="Resources">
+        <a href="walkthroughs/index.html">Walkthroughs</a
+        ><a href="explorations/index.html">Explorations</a
+        ><a href="https://github.com/suyashb734/jaibhakti-design"
+          >GitHub documentation ↗</a
+        >
+      </nav>
+    </header>
+    <main>
+      <p class="eyebrow">
+        Original final design · Current draft · Open explorations
+      </p>
+      <h1>Explore the Jai Bhakti designs</h1>
+      <p class="intro">
+        Walk through the design first supplied for website execution, review the
+        proposed booking updates experience and compare ideas still being
+        explored.
+      </p>
+      <p class="notice">
+        The original <strong>Jai Bhakti App.html</strong> was the first final
+        design handed over for execution on jaibhakti.com. The newer 49-state
+        app candidate and layout explorations remain drafts; no new versioned
+        engineering handoff has been issued.
+      </p>
+      <div class="links">
+        <a class="primary" href="walkthroughs/index.html"
+          >Start guided walkthrough →</a
+        ><a href="walkthroughs/index.html#all-app/0"
+          >Browse all 49 app states</a
+        >
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img
+            src="references/initial-prototype/screens/home.png"
+            alt="First final Jai Bhakti design home"
+          />
+          <div>
+            <p class="eyebrow">Historical final handoff</p>
+            <h2>Original complete design</h2>
+            <p>
+              All 12 advertised entry states from the first final design
+              supplied for website execution.
+            </p>
+            <a href="walkthroughs/index.html#original/0"
+              >Walk through the original →</a
+            >
+          </div>
+        </article>
+        <article class="card">
+          <img
+            src="references/daan-seva-candidate/Revised_Designs/screens/03_Bookings_Nirantar.png"
+            alt="Draft My Bookings interface"
+          />
+          <div>
+            <p class="eyebrow">Draft · JB-CHG-0001</p>
+            <h2>Current app design</h2>
+            <p>
+              Booking, ongoing sevas, dated history, media, beneficiaries and
+              payment-recovery samples.
+            </p>
+            <a href="walkthroughs/index.html#app/0">Follow the app journey →</a>
+            <p>
+              <a href="previews/mobile/Prototype.html"
+                >Open full interactive prototype ↗</a
+              >
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            src="references/daan-seva-candidate/Revised_Designs/screens/06_Bookings_Sections.png"
+            alt="Unselected sections alternative"
+          />
+          <div>
+            <p class="eyebrow">Active · EXP-0001</p>
+            <h2>My Bookings explorations</h2>
+            <p>
+              Compare category tabs and combined sections. Neither option has
+              been selected.
+            </p>
+            <a href="explorations/index.html">Compare the alternatives →</a>
+          </div>
+        </article>
+      </div>
+      <p>
+        <a href="previews/mobile/Gallery.html"
+          >View the full frozen reference gallery ↗</a
+        >
+        · <a href="https://jaibhakti.com">Open the live web app ↗</a>
+      </p>
+      <p class="hint">
+        All prototype bookings, payments and media are demonstrations. Frozen
+        thumbnails can differ from current editable source. Documentation links
+        may require access to the private GitHub repository.
+      </p>
+      <p class="hint" id="snapshot">
+        Review snapshot: dfccf302d16b6e9ec51c3b98f5b81d4dd96155bd. Public hosting does not constitute
+        design approval.
+      </p>
+    </main>
+  </body>
+</html>
