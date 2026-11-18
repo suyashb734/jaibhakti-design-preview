@@ -11,6 +11,14 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "404.html",
+      "sha256": "b7d96b88f76079c9733106a63875de3735036eed2108752d258f7170f6608bae"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c7533600a9a63f4860ee82ebc4dac366bc03dabaa68b8892ee13065c254635f1"
+    },
+    {
       "path": "assets/brand/martel-900-0.woff2",
       "sha256": "7f76ee44f2b0243f29556074804e2960f6a746aa0de4715a386aa1f9383ba0f3"
     },
@@ -92,7 +100,7 @@
     },
     {
       "path": "catalogue/index.html",
-      "sha256": "2b2aba908fbe702370136a803a59073f6e8a3a32b6102f5ec284ac496a87eb85"
+      "sha256": "948068670d371059dbb392263bbefdedc6db6f9135b49fbe1e8683d766e1f38f"
     },
     {
       "path": "catalogue/styles.css",
@@ -100,15 +108,15 @@
     },
     {
       "path": "design-system/index.html",
-      "sha256": "718b745d07fd45883bcd90aece08b3886955c33695bc9a99439623268c77e959"
+      "sha256": "5b0444a5c6833dbc92118fb33a5e42b6403cc47f0782fbec8ecf8529930eca81"
     },
     {
       "path": "explorations/EXP-0001/draft/Gallery.html",
-      "sha256": "aae594034b2d8acb0de4780a90be0fb2c08aca1aa74d5721b410a7685ad1eef6"
+      "sha256": "863663f5b654d3f5b7829222ba8206d61b3fe9981f70ebf8f19dd19415bc46da"
     },
     {
       "path": "explorations/EXP-0001/draft/Prototype.html",
-      "sha256": "c2932324128e93eef261e79566f9c6216f27e001a266d7aa5f8daeea46eb07d4"
+      "sha256": "f2e69c60e9f93751b84f1f37b89907787c9317fd70d6d1a6bcadcc430b3a5392"
     },
     {
       "path": "explorations/EXP-0001/draft/assets/Poppins-License.txt",
@@ -200,19 +208,19 @@
     },
     {
       "path": "explorations/index.html",
-      "sha256": "4fc533a0ee764fc612dffba645d1c8b3b4ea14bae0e430c35c8d1d283456f8e5"
+      "sha256": "d2667bce33f9493712b5324d8cb114ffc99794f2b1a43f33d4b06de417977bb9"
     },
     {
       "path": "index.html",
-      "sha256": "f0f7fbcde17dbab2dbaa864ecceb74a3dd23e4474c4d54ef27d943ea65fe0d9b"
+      "sha256": "b7d96b88f76079c9733106a63875de3735036eed2108752d258f7170f6608bae"
     },
     {
       "path": "previews/mobile/Gallery.html",
-      "sha256": "546052db9297d7821f74fb1a3fa862054025c055c4df0658e7b4cc1cb3e4bae6"
+      "sha256": "f0fffe8db7cecff71fb199934f0a947ac79834ef98415bbf4310c98c153beb1c"
     },
     {
       "path": "previews/mobile/Prototype.html",
-      "sha256": "7fd65a33faf0ba5474f641ddac5c4f08a8aa4f037943b05c374946cf0080d8a8"
+      "sha256": "1d19089d96e044342268f0c4cb04d343c4d3c58eb2ff5196380759d99d54c5d5"
     },
     {
       "path": "previews/mobile/assets/original/chunri.png",
@@ -384,7 +392,7 @@
     },
     {
       "path": "previews/mobile/index.html",
-      "sha256": "0540d497ee05caac2f4b73d77325a10325c12da0d44f19855ac0164bd33bea1b"
+      "sha256": "21c2ba4e92190b2eba6f8ba0522408b76658b0c1e61f0de1706b8e04f90562c8"
     },
     {
       "path": "references/daan-seva-candidate/Revised_Designs/screens/01_Home.png",
@@ -584,7 +592,7 @@
     },
     {
       "path": "references/initial-prototype/Jai Bhakti App.html",
-      "sha256": "2e05ccfa87db8bb7970302f818d6d4a961647fbc423b188b8e01fc03fe7f32ef"
+      "sha256": "7757e642a4683c7f45bdff56e8821213da4f6184b1fd9815c7ed1e1f438eb653"
     },
     {
       "path": "references/initial-prototype/screens/bhent.png",
@@ -676,7 +684,11 @@
     },
     {
       "path": "walkthroughs/index.html",
-      "sha256": "550fc91501b9b9be6e11fce134da19b1d8a88743d01035cfa12a04735f256e91"
+      "sha256": "5acc5b7eec8e8e17fbf93b48d63a15daa1db23505f1a03afdd593d1fbdf36134"
     }
-  ]
+  ],
+  "retired": true,
+  "canonical_repository": "https://github.com/suyashb734/jaibhakti-design",
+  "canonical_preview": "https://suyashb734.github.io/jaibhakti-design/",
+  "migration": "HTML redirects preserve matching paths, query strings and anchors; original Git history and media remain available."
 }
