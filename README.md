@@ -1,20 +1,9 @@
-# Jai Bhakti design preview
+# Jai Bhakti preview — retired
 
-Open the [interactive design preview](https://suyashb734.github.io/jaibhakti-design-preview/).
+The single active public workspace is [jaibhakti-design](https://github.com/suyashb734/jaibhakti-design). Edit design assets, open issues and submit pull requests there.
 
-This repository contains generated static review assets. Design authoring, decisions,
-requirements and approval records remain in the private design workspace. Do not
-edit these generated files as the design source.
+[Open the current design preview](https://suyashb734.github.io/jaibhakti-design/). The source repository now publishes its own GitHub Pages preview, with no cross-repository credentials.
 
-The original Jai Bhakti App.html was the first final design handed over for website
-execution. The newer app candidate and explorations are drafts; publishing this
-preview does not approve a new engineering handoff.
+This repository is retained as a read-only archive to preserve history and existing links. Its HTML pages redirect to the matching current pages and preserve query strings and screen anchors. Existing media assets remain available for old direct links. Do not edit this repository or use it as an authoring source.
 
-This site and its static files are public. Noindex metadata requests exclusion from
-supporting search engines; it does not restrict access or forwarding.
-
-The exact exported source revision and asset checksums are in preview-info.json.
-The private workspace’s Publish review preview Action refreshes this site after
-relevant changes merge to main. Branch work is not published before merge. The
-URL stays fixed; preview-info.json identifies the latest successfully exported
-source commit. Publication remains separate from final engineering approval.
+Isha (`ishaamalhotra`) has active write access to the public source repository. Personal GitHub repositories reserve owner settings for the account owner.
